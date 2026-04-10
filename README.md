@@ -35,48 +35,48 @@ Ready-to-use `SKILL.md` files you can copy into your `.cursor/skills/` directory
 
 Skills that harness Cursor's unique agent capabilities — things only an AI inside Cursor can do.
 
-- [Switch Project](resources/switch-project/SKILL.md) - Switch the active workspace to a different project using the `cursor-app-control` MCP, without opening a new window.
-- [Visual QA](resources/visual-qa/SKILL.md) - Open the app in Cursor's built-in browser, take screenshots, check console errors, and audit network requests after making changes.
-- [Verify in Browser](resources/verify-in-browser/SKILL.md) - Start the dev server, open the app side-by-side with your code, and verify rendering, console, and network health.
-- [Performance Profile](resources/performance-profile/SKILL.md) - Profile CPU performance of a running app using Cursor's browser profiler to capture call stacks and identify slow functions.
-- [Screenshot Changelog](resources/screenshot-changelog/SKILL.md) - Generate visual before/after PR descriptions by screenshotting UI changes across branches.
-- [Best-of-N Solve](resources/best-of-n-solve/SKILL.md) - Try multiple approaches to a hard problem in parallel using isolated git worktrees, then pick the best solution.
-- [Parallel Explore](resources/parallel-explore/SKILL.md) - Explore a large codebase fast by launching multiple read-only subagents that investigate different areas simultaneously.
-- [Grind Until Pass](resources/grind-until-pass/SKILL.md) - Keep iterating autonomously — fix, run, check, repeat — until tests pass, the build succeeds, or linting is clean.
+- [`switching-projects`](resources/switching-projects/SKILL.md) - Switch the active workspace to a different project using the `cursor-app-control` MCP, without opening a new window.
+- [`visual-qa-testing`](resources/visual-qa-testing/SKILL.md) - Open the app in Cursor's built-in browser, take screenshots, check console errors, and audit network requests after making changes.
+- [`verifying-in-browser`](resources/verifying-in-browser/SKILL.md) - Start the dev server, open the app side-by-side with your code, and verify rendering, console, and network health.
+- [`profiling-performance`](resources/profiling-performance/SKILL.md) - Profile CPU performance of a running app using Cursor's browser profiler to capture call stacks and identify slow functions.
+- [`screenshotting-changelog`](resources/screenshotting-changelog/SKILL.md) - Generate visual before/after PR descriptions by screenshotting UI changes across branches.
+- [`best-of-n-solving`](resources/best-of-n-solving/SKILL.md) - Try multiple approaches to a hard problem in parallel using isolated git worktrees, then pick the best solution.
+- [`parallel-exploring`](resources/parallel-exploring/SKILL.md) - Explore a large codebase fast by launching multiple read-only subagents that investigate different areas simultaneously.
+- [`grinding-until-pass`](resources/grinding-until-pass/SKILL.md) - Keep iterating autonomously — fix, run, check, repeat — until tests pass, the build succeeds, or linting is clean.
 
 ### Analytics & Tracking
 
-- [Add Analytics (PostHog)](resources/add-analytics/SKILL.md) - Add event tracking, page views, feature flags, and session replay to any web app.
-- [Add Feature Flags](resources/add-feature-flags/SKILL.md) - Add feature flags for gradual rollouts and A/B testing using PostHog or a simple local implementation.
+- [`adding-analytics`](resources/adding-analytics/SKILL.md) - Add PostHog event tracking, page views, feature flags, and session replay to any web app.
+- [`adding-feature-flags`](resources/adding-feature-flags/SKILL.md) - Add feature flags for gradual rollouts and A/B testing using PostHog or a simple local implementation.
 
 ### Error Tracking & Monitoring
 
-- [Add Error Tracking (Sentry)](resources/add-error-tracking/SKILL.md) - Add crash reporting, performance monitoring, and source maps.
+- [`adding-error-tracking`](resources/adding-error-tracking/SKILL.md) - Add Sentry crash reporting, performance monitoring, and source maps.
 
 ### Authentication & Payments
 
-- [Add Authentication (Auth.js)](resources/add-auth/SKILL.md) - Add OAuth login, session management, and protected routes with NextAuth.js.
-- [Add Stripe Payments](resources/add-stripe/SKILL.md) - Integrate Stripe checkout, subscriptions, webhooks, and customer portal.
+- [`adding-auth`](resources/adding-auth/SKILL.md) - Add OAuth login, session management, and protected routes with Auth.js (NextAuth).
+- [`adding-stripe`](resources/adding-stripe/SKILL.md) - Integrate Stripe checkout, subscriptions, webhooks, and customer portal.
 
 ### Testing
 
-- [Add E2E Tests (Playwright)](resources/add-e2e-tests/SKILL.md) - Set up Playwright with config, example tests, page objects, and CI integration.
+- [`adding-e2e-tests`](resources/adding-e2e-tests/SKILL.md) - Set up Playwright with config, example tests, page objects, and CI integration.
 
 ### Infrastructure & DevOps
 
-- [Add Docker](resources/add-docker/SKILL.md) - Dockerize any app with a multi-stage Dockerfile, docker-compose, and .dockerignore.
-- [Setup CI (GitHub Actions)](resources/setup-ci/SKILL.md) - Set up a CI/CD pipeline with linting, testing, type-checking, and deployment.
-- [Setup Terraform](resources/setup-terraform/SKILL.md) - Infrastructure-as-code with provider config, modules, remote state, and CI integration.
+- [`adding-docker`](resources/adding-docker/SKILL.md) - Dockerize any app with a multi-stage Dockerfile, docker-compose, and .dockerignore.
+- [`setting-up-ci`](resources/setting-up-ci/SKILL.md) - Set up a GitHub Actions CI/CD pipeline with linting, testing, type-checking, and deployment.
+- [`setting-up-terraform`](resources/setting-up-terraform/SKILL.md) - Infrastructure-as-code with provider config, modules, remote state, and CI integration.
 
 ### Code Quality & Security
 
-- [Code Review](resources/code-review/SKILL.md) - Thorough code review focused on correctness, maintainability, performance, and best practices.
-- [Security Audit](resources/security-audit/SKILL.md) - Systematic security audit checking for OWASP Top 10 vulnerabilities, secrets exposure, and insecure patterns.
-- [Performance Audit](resources/performance-audit/SKILL.md) - Audit bundle size, rendering, database queries, and Core Web Vitals.
+- [`reviewing-code`](resources/reviewing-code/SKILL.md) - Thorough code review focused on correctness, maintainability, performance, and best practices.
+- [`auditing-security`](resources/auditing-security/SKILL.md) - Systematic security audit checking for OWASP Top 10 vulnerabilities, secrets exposure, and insecure patterns.
+- [`auditing-performance`](resources/auditing-performance/SKILL.md) - Audit bundle size, rendering, database queries, and Core Web Vitals.
 
 ### Documentation
 
-- [Add API Docs (OpenAPI)](resources/add-api-docs/SKILL.md) - Generate OpenAPI/Swagger documentation with interactive docs UI.
+- [`adding-api-docs`](resources/adding-api-docs/SKILL.md) - Generate OpenAPI/Swagger documentation with interactive docs UI.
 
 ## Plugins
 
