@@ -31,6 +31,21 @@ Skills that harness Cursor's unique agent capabilities — things only an AI ins
 - [`grinding-until-pass`](resources/grinding-until-pass/SKILL.md) - Keep iterating autonomously — fix, run, check, repeat — until tests pass, the build succeeds, or linting is clean.
 - [`babysitting-pr`](resources/babysitting-pr/SKILL.md) - Monitor an open PR for CI failures, review comments, and merge conflicts — then fix them automatically to keep the PR merge-ready.
 - [`finding-dev-server-url`](resources/finding-dev-server-url/SKILL.md) - Scan running terminals for dev server URLs and ports, report what's running where, and open the app in Cursor's browser.
+- [`monitoring-terminal-errors`](resources/monitoring-terminal-errors/SKILL.md) - Watch a running process for crashes and stack traces, navigate to the failing file, and fix it automatically.
+- [`detecting-port-conflicts`](resources/detecting-port-conflicts/SKILL.md) - Detect `EADDRINUSE` errors, find what's using the port, and resolve by killing the process or suggesting an alternative.
+- [`tailing-build-output`](resources/tailing-build-output/SKILL.md) - Monitor a build process for warnings and errors as they stream, fix issues before the build finishes.
+- [`responsive-testing`](resources/responsive-testing/SKILL.md) - Open the app at multiple viewport sizes (mobile, tablet, desktop), screenshot each, and report layout breakage.
+- [`dark-mode-testing`](resources/dark-mode-testing/SKILL.md) - Toggle between light and dark mode in the browser, screenshot both, and flag missing token mappings or contrast issues.
+- [`accessibility-auditing`](resources/accessibility-auditing/SKILL.md) - Use the browser's aria tree to audit for missing labels, broken tab order, ARIA misuse, and contrast issues.
+- [`api-smoke-testing`](resources/api-smoke-testing/SKILL.md) - Discover API routes from the codebase, hit every endpoint, and report which ones return errors.
+- [`form-testing`](resources/form-testing/SKILL.md) - Fill and submit every form with valid/invalid data using the browser, verifying validation, error states, and success flows.
+- [`parallel-test-fixing`](resources/parallel-test-fixing/SKILL.md) - When multiple tests fail, assign each to a separate subagent that fixes it independently in parallel.
+- [`codebase-onboarding`](resources/codebase-onboarding/SKILL.md) - Launch parallel explore subagents to investigate architecture, data models, auth, APIs, and deployment — then synthesize an onboarding doc.
+- [`comparing-branches-visually`](resources/comparing-branches-visually/SKILL.md) - Run two branches on different ports, screenshot the same pages from each, and produce a visual diff for PRs.
+- [`auto-type-checking`](resources/auto-type-checking/SKILL.md) - Run `tsc --noEmit` after file edits to catch type errors immediately. Supports Cursor hooks for automation.
+- [`suggesting-cursor-rules`](resources/suggesting-cursor-rules/SKILL.md) - Analyze a codebase and generate `.cursor/rules/` files that encode the project's conventions and patterns.
+- [`suggesting-cursor-hooks`](resources/suggesting-cursor-hooks/SKILL.md) - Analyze a project and suggest `.cursor/hooks.json` scripts that automate quality checks around agent actions.
+- [`suggesting-skills`](resources/suggesting-skills/SKILL.md) - Analyze a project's stack and workflows, then recommend which skills would be most useful to install.
 
 ### Analytics & Tracking
 
