@@ -6,25 +6,14 @@ Cursor Skills are reusable `SKILL.md` instruction files that teach the AI agent 
 
 ## Contents
 
-- [Featured](#featured)
 - [Skills](#skills)
 - [Plugins](#plugins)
-- [Community Skills](#community-skills)
 - [Cursor Resources](#cursor-resources)
 - [Contributing](#contributing)
 
 > **New:** The [Cursor-Native](#cursor-native) skills section covers skills that tap into Cursor's unique agent capabilities — built-in browser, parallel subagents, worktrees, project switching, and CPU profiling.
 
 ---
-
-## Featured
-
-Standout skills and collections that are especially useful across many projects.
-
-- [PostHog Skills](https://github.com/PostHog/skills) - Official PostHog skills for adding analytics, feature flags, and event tracking to any project.
-- [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) - Official Vercel skills including React best practices, web design guidelines, and deploy workflows.
-- [Anthropic Skills](https://github.com/anthropics/skills) - Official Anthropic skills including skill-creator, frontend-design, webapp-testing, and MCP builder.
-- [Sentry Skills](https://github.com/getsentry/skills) - Official Sentry skills for security review, code review, and development workflows.
 
 ## Skills
 
@@ -48,6 +37,7 @@ Skills that harness Cursor's unique agent capabilities — things only an AI ins
 
 - [`adding-analytics`](resources/adding-analytics/SKILL.md) - Add PostHog event tracking, page views, feature flags, and session replay to any web app.
 - [`adding-feature-flags`](resources/adding-feature-flags/SKILL.md) - Add feature flags for gradual rollouts and A/B testing using PostHog or a simple local implementation.
+- [PostHog/skills](https://github.com/PostHog/skills) - Official PostHog skills for analytics, feature flags, session replay, and LLM analytics.
 
 ### Error Tracking & Monitoring
 
@@ -68,16 +58,26 @@ Skills that harness Cursor's unique agent capabilities — things only an AI ins
 - [`adding-docker`](resources/adding-docker/SKILL.md) - Dockerize any app with a multi-stage Dockerfile, docker-compose, and .dockerignore.
 - [`setting-up-ci`](resources/setting-up-ci/SKILL.md) - Set up a GitHub Actions CI/CD pipeline with linting, testing, type-checking, and deployment.
 - [`setting-up-terraform`](resources/setting-up-terraform/SKILL.md) - Infrastructure-as-code with provider config, modules, remote state, and CI integration.
+- [antonbabenko/terraform-skill](https://github.com/antonbabenko/terraform-skill) - Terraform and OpenTofu skill — testing, modules, CI/CD, and production patterns.
 
 ### Code Quality & Security
 
 - [`reviewing-code`](resources/reviewing-code/SKILL.md) - Thorough code review focused on correctness, maintainability, performance, and best practices.
 - [`auditing-security`](resources/auditing-security/SKILL.md) - Systematic security audit checking for OWASP Top 10 vulnerabilities, secrets exposure, and insecure patterns.
 - [`auditing-performance`](resources/auditing-performance/SKILL.md) - Audit bundle size, rendering, database queries, and Core Web Vitals.
+- [Anthropic Simplify](https://github.com/anthropics/skills) - Reviews code for reuse, efficiency, and quality, fixing dead code and naming issues.
+- [Sentry Code Review](https://github.com/getsentry/skills) - Code review following Sentry's engineering practices.
+- [Sentry Security Review](https://github.com/getsentry/skills) - Security code review for injection, XSS, and auth vulnerabilities.
 
 ### Dependencies
 
 - [`updating-npm-package`](resources/updating-npm-package/SKILL.md) - Safely update an npm package: check npmjs.com for the latest version, read release notes, auto-apply minor updates, and for major updates find the migration guide and produce a detailed validation report.
+
+### Frontend & UI
+
+- [shadcn/ui Skill](https://github.com/hzm0321/real-time-fund/blob/main/.cursor/skills/shadcn/SKILL.md) - Managing shadcn components — adding, searching, debugging, styling, and composing UI.
+- [Vercel React Best Practices](https://github.com/vercel-labs/agent-skills) - 40+ rules for React/Next.js performance including eliminating request waterfalls and bundle optimization.
+- [Vercel Web Design Guidelines](https://github.com/vercel-labs/agent-skills) - UI code auditing for accessibility, UX, and performance compliance.
 
 ### Documentation
 
@@ -126,31 +126,6 @@ Official Cursor marketplace plugins with bundled skills. Install via **Cursor Se
 - [Meta Reality Labs](https://cursor.com/cn/marketplace/meta-reality-labs) - (`hz-immersive-designer`, `hz-new-project-creation` + 11 more) Quest and Horizon OS development.
 - [Plain](https://cursor.com/cn/marketplace/plain) - Support threads, customer management, and help center articles.
 - [Turbopuffer](https://cursor.com/cn/marketplace/turbopuffer) - Vector and full-text search database integration.
-
-## Community Skills
-
-Open-source skill repositories from the community and official dev teams.
-
-### Analytics & Monitoring
-
-- [PostHog/skills](https://github.com/PostHog/skills) - Official PostHog skills for analytics, feature flags, session replay, and LLM analytics.
-- [PostHog/ai-plugin](https://github.com/PostHog/ai-plugin) - PostHog AI plugin for Cursor and other coding agents.
-
-### Infrastructure & Deployment
-
-- [antonbabenko/terraform-skill](https://github.com/antonbabenko/terraform-skill) - Claude Agent Skill for Terraform and OpenTofu — testing, modules, CI/CD, and production patterns.
-
-### Frontend & UI
-
-- [shadcn/ui Skill](https://github.com/hzm0321/real-time-fund/blob/main/.cursor/skills/shadcn/SKILL.md) - Managing shadcn components — adding, searching, debugging, styling, and composing UI.
-- [Vercel React Best Practices](https://github.com/vercel-labs/agent-skills) - 40+ rules for React/Next.js performance, including eliminating request waterfalls and bundle optimization.
-- [Vercel Web Design Guidelines](https://github.com/vercel-labs/agent-skills) - UI code auditing for accessibility, UX, and performance compliance.
-
-### Code Quality
-
-- [Anthropic Simplify](https://github.com/anthropics/skills) - Reviews code for reuse, efficiency, and quality, fixing dead code and naming issues.
-- [Sentry Code Review](https://github.com/getsentry/skills) - Code review following Sentry's engineering practices.
-- [Sentry Security Review](https://github.com/getsentry/skills) - Systematic security code review for injection, XSS, and authentication vulnerabilities.
 
 ## Cursor Resources
 
