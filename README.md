@@ -10,8 +10,7 @@ Cursor Skills are reusable `SKILL.md` instruction files that teach the AI agent 
 - [Skills](#skills)
 - [Plugins](#plugins)
 - [Community Skills](#community-skills)
-- [Cursor Rules (Related)](#cursor-rules-related)
-- [Resources](#resources)
+- [Cursor Resources](#cursor-resources)
 - [Contributing](#contributing)
 
 > **New:** The [Cursor-Native](#cursor-native) skills section covers skills that tap into Cursor's unique agent capabilities — built-in browser, parallel subagents, worktrees, project switching, and CPU profiling.
@@ -76,6 +75,10 @@ Skills that harness Cursor's unique agent capabilities — things only an AI ins
 - [`auditing-security`](resources/auditing-security/SKILL.md) - Systematic security audit checking for OWASP Top 10 vulnerabilities, secrets exposure, and insecure patterns.
 - [`auditing-performance`](resources/auditing-performance/SKILL.md) - Audit bundle size, rendering, database queries, and Core Web Vitals.
 
+### Dependencies
+
+- [`updating-npm-package`](resources/updating-npm-package/SKILL.md) - Safely update an npm package: check npmjs.com for the latest version, read release notes, auto-apply minor updates, and for major updates find the migration guide and produce a detailed validation report.
+
 ### Documentation
 
 - [`adding-api-docs`](resources/adding-api-docs/SKILL.md) - Generate OpenAPI/Swagger documentation with interactive docs UI.
@@ -84,45 +87,45 @@ Skills that harness Cursor's unique agent capabilities — things only an AI ins
 
 Official Cursor marketplace plugins with bundled skills. Install via **Cursor Settings > Plugins**.
 
-- [Figma](https://cursor.com/cn/marketplace/figma) - (`generate-design`, `code-connect-components`, `generate-design-system-library` + 4 more) Skills for translating Figma designs into production code and managing design systems.
-- [Linear](https://cursor.com/cn/marketplace/linear) - Skills for managing issues, projects, documents, and sprints via MCP.
-- [Slack](https://cursor.com/cn/marketplace/slack) - Skills for searching channels, sending messages, and performing Slack actions via MCP.
-- [Datadog](https://cursor.com/cn/marketplace/datadog) - (`datadog-mcp-setup`) Skills for querying logs, metrics, traces, and dashboards through natural conversation.
-- [Stripe](https://cursor.com/cn/marketplace/stripe) - (`stripe-best-practices`, `upgrade-stripe`) Skills for payment integration patterns and SDK migration guidance.
-- [Firebase](https://cursor.com/cn/marketplace/firebase) - (`firebase-ai-logic`, `firebase-auth-basics`, `firebase-app-hosting-basics` + 8 more) Skills for building apps with Firebase backend and AI infrastructure.
-- [Shopify](https://cursor.com/cn/marketplace/shopify) - (`shopify-admin`, `shopify-admin-execution`, `shopify-custom-data` + 13 more) Skills for Shopify development across GraphQL, Liquid, and extensions.
-- [dbt Labs](https://cursor.com/cn/marketplace/dbt-labs) - (`adding-dbt-unit-test`, `answering-natural-language-questions-with-dbt`, `building-dbt-semantic-layer` + 6 more) Skills for data modeling, analytics engineering, and dbt Cloud workflows.
-- [Sentry](https://cursor.com/cn/marketplace/sentry) - (`sentry-code-review`, `sentry-browser-sdk`, `sentry-cloudflare-sdk` + 25 more) Skills for error tracking, performance monitoring, and SDK integration across platforms.
-- [Vercel](https://cursor.com/cn/marketplace/vercel) - (`ai-architect`, `deployment-expert`, `performance-optimizer` + 25 more) Skills for building, deploying, and optimizing web apps and AI agents.
-- [Svelte](https://cursor.com/cn/marketplace/svelte) - (`svelte-file-editor`, `svelte-code-writer`, `svelte-core-bestpractices` + 1 more) Skills for Svelte 5 development with documentation lookup and code validation.
-- [Elastic](https://cursor.com/cn/marketplace/elastic) - (`cloud-create-project`, `cloud-manage-project`, `cloud-access-management` + 30 more) Skills for Elasticsearch, Kibana, Observability, and ES|QL workflows.
-- [Postman](https://cursor.com/cn/marketplace/postman) - (`api-readiness-analyzer`, `postman-knowledge`, `postman-routing` + 10 more) Skills for full API lifecycle management and security auditing.
-- [Sanity](https://cursor.com/cn/marketplace/sanity) - (`content-experimentation-best-practices`, `content-modeling-best-practices`, `seo-aeo-best-practices` + 5 more) Skills for CMS integration, schema design, and content workflows.
-- [Langfuse](https://cursor.com/cn/marketplace/langfuse) - (`langfuse`) Skills for LLM tracing, prompt management, and evaluation.
-- [CockroachDB](https://cursor.com/cn/marketplace/cockroachdb) - (`cockroachdb-sql-patterns`, `cockroachdb-app-patterns`, `cockroachdb-operator-patterns` + 1 more) Skills for schema exploration, query optimization, and distributed DB management.
-- [Encore](https://cursor.com/cn/marketplace/encore) - (`add-infrastructure`, `create-service`, `encore-code-review` + 19 more) Skills for building backend services in TypeScript/Go with automatic infrastructure.
-- [AWS Amplify](https://cursor.com/cn/marketplace/aws-amplify) - (`amplify-workflow`) Skills for building full-stack apps with authentication, data models, and storage.
-- [AWS Serverless](https://cursor.com/cn/marketplace/aws-serverless) - (`aws-lambda`, `api-gateway`, `aws-lambda-durable-functions` + 1 more) Skills for designing, building, and deploying serverless applications.
-- [Pendo](https://cursor.com/cn/marketplace/pendo) - (`account-health`, `feature-adoption`, `feedback-analysis` + 1 more) Skills for product analytics, session replays, and customer insights.
-- [GitLab](https://cursor.com/cn/marketplace/gitlab) - (`gitlab-ci-author`, `backlog-health`, `pipeline-status` + 6 more) Skills for managing issues, merge requests, and CI/CD pipelines.
-- [Sourcegraph](https://cursor.com/cn/marketplace/sourcegraph) - (`searching-sourcegraph`, `sourcegraph-deepsearch`) Skills for code search and navigation across repositories.
-- [Miro](https://cursor.com/cn/marketplace/miro) - (`miro-mcp`, `diagram`, `summarize` + 3 more) Skills for reading board context, creating diagrams, and generating code from whiteboards.
-- [Cloudinary](https://cursor.com/cn/marketplace/cloudinary) - (`cloudinary-docs`, `cloudinary-transformations`) Skills for media asset management, transformations, and optimization.
-- [Appwrite](https://cursor.com/cn/marketplace/appwrite) - (`appwrite-cli`, `appwrite-web`, `appwrite-dart` + 7 more) Skills for backend-as-a-service with database, auth, and storage across platforms.
-- [ClickUp](https://cursor.com/cn/marketplace/clickup) - Skills for task management, time tracking, and collaboration via MCP.
-- [Box](https://cursor.com/cn/marketplace/box) - (`box`) Skills for content management, AI Q&A, summarization, and extraction.
-- [Chargebee](https://cursor.com/cn/marketplace/chargebee) - (`chargebee-integration`) Skills for billing operations, API integration, and webhook handling.
-- [Circle](https://cursor.com/cn/marketplace/circle) - (`bridge-stablecoin`, `use-circle-wallets`, `use-gateway` + 6 more) Skills for stablecoin payments, cross-chain transfers, and smart contracts.
-- [Runlayer](https://cursor.com/cn/marketplace/runlayer) - (`mcp-builder`, `mcp-security-audit`, `plugin-builder`) Skills for security policies, secret protection, and audit trails for MCPs.
-- [Superpowers](https://cursor.com/cn/marketplace/superpowers) - (`code-reviewer`, `brainstorming`, `dispatching-parallel-agents` + 12 more) Skills for TDD, debugging, and collaboration patterns.
-- [Omni](https://cursor.com/cn/marketplace/omni) - (`omni-content-builder`, `omni-ai-optimizer`, `omni-content-explorer` + 8 more) Skills for analytics exploration, querying, model building, and dashboard creation.
-- [Braintrust](https://cursor.com/cn/marketplace/braintrust) - Skills for AI evaluation, experiments, and evaluation logs via MCP.
-- [Parallel](https://cursor.com/cn/marketplace/parallel) - (`parallel-web-search`, `parallel-deep-research`, `parallel-data-enrichment` + 1 more) Skills for web search, content extraction, and deep research.
-- [Tavily](https://cursor.com/cn/marketplace/tavily) - (`tavily-cli`, `tavily-extract`, `tavily-crawl` + 3 more) Skills for web search, crawling, deep research, and URL discovery.
-- [Astronomer](https://cursor.com/cn/marketplace/astronomer) - (`airflow`, `airflow-plugins`, `analyzing-data` + 18 more) Skills for data engineering, warehouse exploration, and Airflow integration.
-- [Meta Reality Labs](https://cursor.com/cn/marketplace/meta-reality-labs) - (`hz-immersive-designer`, `hz-new-project-creation`, `hz-iwsdk-webxr` + 10 more) Skills for Meta Quest and Horizon OS development.
-- [Plain](https://cursor.com/cn/marketplace/plain) - Skills for support threads, customer management, and help center articles.
-- [Turbopuffer](https://cursor.com/cn/marketplace/turbopuffer) - Skills for vector and full-text search database integration.
+- [Figma](https://cursor.com/cn/marketplace/figma) - (`generate-design`, `code-connect-components` + 5 more) Design-to-code and design system management.
+- [Linear](https://cursor.com/cn/marketplace/linear) - Issues, projects, documents, and sprints via MCP.
+- [Slack](https://cursor.com/cn/marketplace/slack) - Channel search, messaging, and Slack actions via MCP.
+- [Datadog](https://cursor.com/cn/marketplace/datadog) - (`datadog-mcp-setup`) Query logs, metrics, traces, and dashboards.
+- [Stripe](https://cursor.com/cn/marketplace/stripe) - (`stripe-best-practices`, `upgrade-stripe`) Payment integration and SDK migration.
+- [Firebase](https://cursor.com/cn/marketplace/firebase) - (`firebase-ai-logic`, `firebase-auth-basics` + 9 more) Backend, auth, and AI infrastructure.
+- [Shopify](https://cursor.com/cn/marketplace/shopify) - (`shopify-admin`, `shopify-custom-data` + 14 more) GraphQL, Liquid, and extensions.
+- [dbt Labs](https://cursor.com/cn/marketplace/dbt-labs) - (`adding-dbt-unit-test`, `building-dbt-semantic-layer` + 7 more) Data modeling and analytics engineering.
+- [Sentry](https://cursor.com/cn/marketplace/sentry) - (`sentry-code-review`, `sentry-browser-sdk` + 26 more) Error tracking and SDK integration.
+- [Vercel](https://cursor.com/cn/marketplace/vercel) - (`ai-architect`, `deployment-expert`, `performance-optimizer` + 25 more) Deploy and optimize web apps.
+- [Svelte](https://cursor.com/cn/marketplace/svelte) - (`svelte-file-editor`, `svelte-code-writer` + 2 more) Svelte 5 development and validation.
+- [Elastic](https://cursor.com/cn/marketplace/elastic) - (`cloud-create-project`, `cloud-manage-project` + 31 more) Elasticsearch and Observability.
+- [Postman](https://cursor.com/cn/marketplace/postman) - (`api-readiness-analyzer`, `postman-routing` + 11 more) API lifecycle management.
+- [Sanity](https://cursor.com/cn/marketplace/sanity) - (`content-modeling-best-practices`, `seo-aeo-best-practices` + 6 more) CMS and content workflows.
+- [Langfuse](https://cursor.com/cn/marketplace/langfuse) - (`langfuse`) LLM tracing, prompt management, and evaluation.
+- [CockroachDB](https://cursor.com/cn/marketplace/cockroachdb) - (`cockroachdb-sql-patterns`, `cockroachdb-app-patterns` + 2 more) Distributed DB management.
+- [Encore](https://cursor.com/cn/marketplace/encore) - (`add-infrastructure`, `create-service` + 20 more) TypeScript/Go backends with auto infrastructure.
+- [AWS Amplify](https://cursor.com/cn/marketplace/aws-amplify) - (`amplify-workflow`) Full-stack apps with auth, data, and storage.
+- [AWS Serverless](https://cursor.com/cn/marketplace/aws-serverless) - (`aws-lambda`, `api-gateway` + 2 more) Serverless application lifecycle.
+- [Pendo](https://cursor.com/cn/marketplace/pendo) - (`account-health`, `feature-adoption` + 2 more) Product analytics and session replays.
+- [GitLab](https://cursor.com/cn/marketplace/gitlab) - (`gitlab-ci-author`, `backlog-health` + 7 more) Issues, MRs, and CI/CD pipelines.
+- [Sourcegraph](https://cursor.com/cn/marketplace/sourcegraph) - (`searching-sourcegraph`, `sourcegraph-deepsearch`) Code search across repos.
+- [Miro](https://cursor.com/cn/marketplace/miro) - (`miro-mcp`, `diagram` + 4 more) Board context, diagrams, and code generation.
+- [Cloudinary](https://cursor.com/cn/marketplace/cloudinary) - (`cloudinary-docs`, `cloudinary-transformations`) Media management and optimization.
+- [Appwrite](https://cursor.com/cn/marketplace/appwrite) - (`appwrite-cli`, `appwrite-web` + 8 more) BaaS with database, auth, and storage.
+- [ClickUp](https://cursor.com/cn/marketplace/clickup) - Task management, time tracking, and collaboration via MCP.
+- [Box](https://cursor.com/cn/marketplace/box) - (`box`) Content management, AI Q&A, and extraction.
+- [Chargebee](https://cursor.com/cn/marketplace/chargebee) - (`chargebee-integration`) Billing operations and webhook handling.
+- [Circle](https://cursor.com/cn/marketplace/circle) - (`bridge-stablecoin`, `use-circle-wallets` + 7 more) Stablecoin payments and smart contracts.
+- [Runlayer](https://cursor.com/cn/marketplace/runlayer) - (`mcp-builder`, `mcp-security-audit`, `plugin-builder`) MCP security and governance.
+- [Superpowers](https://cursor.com/cn/marketplace/superpowers) - (`code-reviewer`, `brainstorming` + 13 more) TDD, debugging, and collaboration.
+- [Omni](https://cursor.com/cn/marketplace/omni) - (`omni-content-builder`, `omni-ai-optimizer` + 9 more) Analytics and dashboard creation.
+- [Braintrust](https://cursor.com/cn/marketplace/braintrust) - AI evaluation, experiments, and evaluation logs via MCP.
+- [Parallel](https://cursor.com/cn/marketplace/parallel) - (`parallel-web-search`, `parallel-deep-research` + 2 more) Web search and data enrichment.
+- [Tavily](https://cursor.com/cn/marketplace/tavily) - (`tavily-cli`, `tavily-extract` + 4 more) Web search, crawling, and deep research.
+- [Astronomer](https://cursor.com/cn/marketplace/astronomer) - (`airflow`, `airflow-plugins` + 19 more) Data engineering and Airflow integration.
+- [Meta Reality Labs](https://cursor.com/cn/marketplace/meta-reality-labs) - (`hz-immersive-designer`, `hz-new-project-creation` + 11 more) Quest and Horizon OS development.
+- [Plain](https://cursor.com/cn/marketplace/plain) - Support threads, customer management, and help center articles.
+- [Turbopuffer](https://cursor.com/cn/marketplace/turbopuffer) - Vector and full-text search database integration.
 
 ## Community Skills
 
@@ -149,15 +152,15 @@ Open-source skill repositories from the community and official dev teams.
 - [Sentry Code Review](https://github.com/getsentry/skills) - Code review following Sentry's engineering practices.
 - [Sentry Security Review](https://github.com/getsentry/skills) - Systematic security code review for injection, XSS, and authentication vulnerabilities.
 
-## Cursor Rules (Related)
+## Cursor Resources
+
+### Cursor Rules
 
 Cursor Rules (`.cursorrules` / `.cursor/rules/`) are complementary to skills — rules are always-on conventions, skills are on-demand workflows.
 
 - [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - The most comprehensive collection of `.cursorrules` files, categorized by framework and language.
 - [sanjeed5/awesome-cursor-rules-mdc](https://github.com/sanjeed5/awesome-cursor-rules-mdc) - Curated `.mdc` format rules with a generator tool.
 - [tugkanboz/awesome-cursorrules](https://github.com/tugkanboz/awesome-cursorrules) - Showcases modern Cursor Rules system with MDC format.
-
-## Resources
 
 ### Learning
 
